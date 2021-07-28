@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:background="@drawable/border_bottom_left_right"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/red"
+        android:paddingStart="@dimen/dimen_5"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:text="10% OFF"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_8" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:src="@color/grey"
+            app:tint="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_light"
+                android:padding="@dimen/dimen_5"
+                android:text="GOMECHANIC"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_bold"
+                android:padding="@dimen/dimen_5"
+                android:text="RACEMAX 4T 20W40 \n(0.9L)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_light"
+                android:padding="@dimen/dimen_5"
+                android:text="GMUN4TLB001"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nexa_bold"
+                    android:padding="@dimen/dimen_5"
+                    android:text="400AED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:id="@+id/lin_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/border_rectangle_black"
+                        android:fontFamily="@font/nexa_light"
+                        android:paddingStart="@dimen/dimen_20"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingEnd="@dimen/dimen_20"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="Add"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border_rectangle_black"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="-"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+
+                    <TextView
+                        android:id="@+id/tv_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/tv_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_5"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:paddingBottom="@dimen/dimen_5"
+                        android:text="+"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

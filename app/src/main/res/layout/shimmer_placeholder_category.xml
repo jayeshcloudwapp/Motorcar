@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_10"
+    android:layout_marginRight="@dimen/dimen_10"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dimen_5"
+    app:cardElevation="@dimen/dimen_5"
+    app:cardMaxElevation="@dimen/dimen_5"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/include4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:background="@color/background" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/iv_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_gravity="center_vertical"
+                android:background="@color/background"
+                android:fontFamily="@font/nexa_bold"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_12" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dimen_16"
+            android:layout_height="@dimen/dimen_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/text_10"
+            android:background="@color/background" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

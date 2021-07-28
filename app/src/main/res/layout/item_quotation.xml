@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mcv_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dimen_5"
+    app:cardElevation="@dimen/dimen_5"
+    app:cardMaxElevation="@dimen/dimen_5"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/include4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:src="@drawable/ic_preferred" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_img"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/ic_user_grey"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Amara"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_30"
+                        android:drawableLeft="@drawable/ic_star"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:text="4.5"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nexa_bold"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Price : 668 AED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="21 Jun 2021 12:05 PM"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Distance - 2km"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_20">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/border_btn"
+                android:backgroundTint="#01C43C"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:fontFamily="@font/nexa_light"
+                android:paddingStart="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_10"
+                android:shadowRadius="10"
+                android:text="Accept"
+
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/tv_accept"
+                android:background="@drawable/border_btn"
+                android:backgroundTint="#0195C4"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:fontFamily="@font/nexa_light"
+                android:paddingStart="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_10"
+                android:shadowRadius="10"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/btn_chat"
+                android:background="@drawable/border_btn"
+                android:backgroundTint="@color/black"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:fontFamily="@font/nexa_light"
+                android:paddingStart="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_10"
+                android:shadowRadius="10"
+                android:text="Details"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                app:cornerRadius="10dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_forward"
+                android:visibility="gone"
+                app:tint="#b7b7b7" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

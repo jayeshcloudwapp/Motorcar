@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="verifyviewmodel"
+            type="com.cw.motorcar.driver.ui.activity.auth.VerifyViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".driver.ui.activity.auth.VerifyActivity">
+
+        <include
+            android:id="@+id/include10"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_180"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/guideline16"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/include10"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15"
+            app:layout_constraintEnd_toStartOf="@+id/guideline16"
+            app:layout_constraintStart_toStartOf="@+id/guideline15"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="Verify Phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_20" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="Get a code by SMS"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="Code"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                            android:id="@+id/et_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_rectangle"
+                            android:fontFamily="@font/nexa_light"
+                            android:padding="@dimen/dimen_12"
+                            android:textAlignment="center"
+                            android:textColor="@color/text2"
+                            android:textSize="@dimen/text_12"
+                            app:ccp_defaultCode="@string/country_united_kingdom_code"
+                            app:ccp_showFlag="false"
+                            app:ccp_hideNameCode="true"
+                            app:ccp_showFullName="false" />
+
+                        <EditText
+                            android:text="@={verifyviewmodel.mobile}"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_toRightOf="@+id/et_country"
+                            android:background="@drawable/border_rectangle"
+                            android:fontFamily="@font/nexa_light"
+                            android:hint="Mobile Number"
+                            android:padding="@dimen/dimen_15"
+                            android:inputType="phone"
+                            android:textColor="@color/text2"
+                            android:textSize="@dimen/text_12" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nexa_light"
+                android:text="Please enter the mobile number like eg. 9757897672"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_12" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_recive_code"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:enabled="true"
+                android:fontFamily="@font/nexa_bold"
+                android:paddingLeft="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_15"
+                android:text="Receive Code"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

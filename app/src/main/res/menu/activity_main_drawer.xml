@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/menu_my_order"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_my_order"
+        android:title="@string/my_order" />
+    <item
+        android:id="@+id/menu_offer"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_offer"
+        android:title="Offer" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_review"
+        android:title="@string/write_a_review" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/share_app" />
+    <item
+        android:id="@+id/menu_contact_admin"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_contact_admin"
+        android:title="@string/contact_admin" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_terms"
+        android:title="@string/terms_amp_conditions" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_privacy"
+        android:title="@string/privacy_policy" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_about"
+        android:title="@string/about_us" />
+    <item
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_cookies"
+        android:title="@string/cookies" />
+    <item
+        android:id="@+id/menu_change_pass"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_change_pass"
+        android:title="@string/change_password" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/logout" />
+
+</menu>

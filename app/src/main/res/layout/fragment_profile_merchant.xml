@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".merchant.ui.profile.ProfileMerchantFragment">
+
+    <include layout="@layout/toolbar_merchant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom_selected"
+            android:drawableBottom="@color/black"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_bottom"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="Service"
+            android:textColor="@color/text2"
+            android:textSize="@dimen/text_15" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:fillViewport="true"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingEnd="@dimen/dimen_20"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_90"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_height="@dimen/dimen_90"
+                        android:layout_gravity="center"
+                        android:src="@color/black" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:elevation="@dimen/dimen_5"
+                        app:cardCornerRadius="@dimen/dimen_15"
+                        app:cardMaxElevation="@dimen/dimen_5"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_camera" />
+
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:text="Trade Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_rectangle"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_18"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_rectangle"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_18"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:text="Mobile Number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_rectangle"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="number"
+                        android:padding="@dimen/dimen_18"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="text"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border_rectangle"
+                        android:fontFamily="@font/nexa_light"
+                        android:inputType="number"
+                        android:padding="@dimen/dimen_18"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/et_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/border_rectangle"
+                        android:fontFamily="@font/nexa_light"
+                        android:hint="Upload Trade License"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_18"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center">
+
+                        <View
+                            android:layout_width="@dimen/dimen_1"
+                            android:layout_height="fill_parent"
+                            android:background="#DEDEDE" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/nexa_light"
+                            android:hint="Browse"
+                            android:inputType="text"
+                            android:padding="@dimen/dimen_18"
+                            android:textColor="@color/text2"
+                            android:textSize="@dimen/text_15" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_60"
+                    android:layout_marginBottom="20dp"
+                    android:enabled="true"
+                    android:fontFamily="@font/nexa_bold"
+                    android:paddingLeft="@dimen/dimen_30"
+                    android:paddingTop="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_30"
+                    android:paddingBottom="@dimen/dimen_15"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                `
+
+                <TextView
+                    android:id="@+id/tv_btn_add_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/border_btn"
+                    android:fontFamily="@font/nexa_bold"
+                    android:paddingStart="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:paddingEnd="@dimen/dimen_10"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:text="@string/add_new_services"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20">
+
+                        <TextView
+                            android:id="@+id/tv_service1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/ic_baseline_trending"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Care"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_toRightOf="@+id/tv_service1"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Wash"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_delete" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20">
+
+                        <TextView
+                            android:id="@+id/tv_service2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/ic_baseline_trending"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Care"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_toRightOf="@+id/tv_service2"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Wash"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_delete" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20">
+
+                        <TextView
+                            android:id="@+id/tv_service3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawableRight="@drawable/ic_baseline_trending"
+                            android:drawablePadding="@dimen/dimen_5"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Care"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5"
+                            android:layout_toRightOf="@+id/tv_service3"
+                            android:fontFamily="@font/nexa_light"
+                            android:inputType="text"
+                            android:text="Car Wash"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/text_12" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_delete" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

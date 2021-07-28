@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.cw.motorcar.driver.ui.activity.auth.LoginViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".driver.ui.activity.auth.LoginActivity">
+
+            <include
+                android:id="@+id/include3"
+                layout="@layout/layout_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="@string/email_phone_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_smartphone"
+                        android:drawablePadding="@dimen/dimen_20"
+                        android:fontFamily="@font/nexa_light"
+                        android:hint="+9198785488"
+                        android:text="@={viewmodel.email}"
+                        android:inputType="phone"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:background="@color/text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="@string/password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_15" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10">
+
+                        <EditText
+                            android:id="@+id/et_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@null"
+                            android:drawableLeft="@drawable/ic_lock"
+                            android:drawablePadding="@dimen/dimen_20"
+                            android:fontFamily="@font/nexa_light"
+                            android:hint="123456"
+                            android:text="@={viewmodel.password}"
+                            android:inputType="textPassword"
+                            android:textColor="@color/text"
+                            android:textSize="@dimen/text_12" />
+
+                        <ImageView
+                            android:id="@+id/iv_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/dimen_15"
+                            android:onClick="ShowHidePass"
+                            android:src="@drawable/ic_eye" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:background="@color/text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/login_button"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:onClick="@{viewmodel::onLoginClickButtion}"
+                        android:fontFamily="@font/nexa_bold"
+                        android:paddingLeft="@dimen/dimen_30"
+                        android:paddingTop="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:paddingBottom="@dimen/dimen_15"
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:cornerRadius="10dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_signup"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:fontFamily="@font/nexa_bold"
+                        android:paddingLeft="@dimen/dimen_30"
+                        android:paddingTop="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:paddingBottom="@dimen/dimen_15"
+                        android:text="@string/signup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Corporate Driver Signup"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:id="@+id/tv_merchant_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="|  Merchant Signup"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

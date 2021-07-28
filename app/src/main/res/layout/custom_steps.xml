@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10"
+    android:id="@+id/lin_parent_step">
+
+    <!--    Step 1 Start-->
+    <LinearLayout
+        android:id="@+id/lin_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/lin_step1_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_circleoutline" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_line_vertical_active" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_orderplace"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_marginLeft="@dimen/dimen_40"
+                    android:src="@drawable/ic_circleoutline"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_orderplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_toRightOf="@+id/iv_orderplace"
+                    android:fontFamily="@font/nexa_bold"
+                    android:text="Ordered"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_orderplace"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_toRightOf="@+id/iv_orderplace"
+                    android:text="Tue 23rd July 21"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/nexa_light"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_step1_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_line_vertical_active" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--Step 1 End-->
+
+    <!--    Step 2 Start-->
+    <LinearLayout
+        android:id="@+id/lin_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_step2_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                app:tint="@color/text2"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                app:tint="@color/text2"
+                android:src="@drawable/ic_line_vertical_active" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_step2_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_line_vertical_active" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_driver"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginLeft="@dimen/dimen_40"
+
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rel_driverassigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_driver">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:fontFamily="@font/nexa_bold"
+                    android:text="Processing"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_driverassigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_driverassigned"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_toRightOf="@+id/iv_driver"
+                android:fontFamily="@font/nexa_light"
+                android:text="Tue 25th July 21"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--    Step 2 End-->
+    <!--    Step 6 Start-->
+    <LinearLayout
+        android:id="@+id/lin_step6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lin_step6_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                app:tint="@color/text2"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                app:tint="@color/text2"
+                android:src="@drawable/ic_line_vertical_active" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_step6_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_line_vertical_active" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_store"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:src="@drawable/ic_circleoutline"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rel_driverarrived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_store">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:fontFamily="@font/nexa_bold"
+                    android:text="Shipped"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_driveraarrived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_driverarrived"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_toRightOf="@+id/iv_store"
+                android:fontFamily="@font/nexa_light"
+                android:text="Tue 25th July 23"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10" />
+
+        </RelativeLayout>
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dimen_40"
+              android:text="@string/driver_assigned"
+              android:textAlignment="textStart"
+              android:textColor="@color/colorPrimary"
+              android:textSize="@dimen/dimen_10" />-->
+    </LinearLayout>
+    <!--    Step 6 End-->
+    <!--    Step 3 Start-->
+    <LinearLayout
+        android:id="@+id/lin_step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lin_step3_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_line_vertical_active" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_step3_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_line_vertical_active" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_ontheway"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:src="@drawable/ic_circleoutline"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_ontheway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/iv_ontheway"
+                android:fontFamily="@font/nexa_bold"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ontheway"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_toRightOf="@+id/iv_ontheway"
+
+                android:text="Your order is on the way"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--    Step 3 End-->
+    <!--    Step 4 Start-->
+    <LinearLayout
+        android:id="@+id/lin_step4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lin_step4_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                app:tint="@color/text2"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_step4_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_circleoutline" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_complete"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginLeft="@dimen/dimen_40"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/iv_complete"
+                android:fontFamily="@font/nexa_bold"
+                android:text="Delivery"
+                android:drawableRight="@drawable/ic_arrow_forward"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_complete"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_toRightOf="@+id/iv_complete"
+                android:fontFamily="@font/nexa_light"
+                android:text="Expected by Wed 424th July\n 28th JUly item yet to be deliverd"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--    Step 4 End-->
+
+
+</LinearLayout>

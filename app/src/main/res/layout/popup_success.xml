@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_30"
+    android:layout_marginTop="@dimen/dimen_40"
+    android:layout_marginEnd="@dimen/dimen_30">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:background="@color/yellow_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="@dimen/text_30"
+            android:layout_height="@dimen/text_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_close_circle" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:fontFamily="@font/nexa_bold"
+            android:text="Awesome !"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_cross"
+            app:layout_constraintTop_toTopOf="@+id/iv_cross" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ok"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:enabled="true"
+        android:fontFamily="@font/nexa_bold"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingBottom="@dimen/dimen_15"
+        android:text="ok"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="#E2E2E2"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:srcCompat="@drawable/ic_message" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/text2"
+        android:textSize="@dimen/text_15"
+        android:fontFamily="@font/nexa_light"
+        android:text="Your request has been sent you will receive quotes shortly..!"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

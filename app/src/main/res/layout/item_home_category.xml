@@ -1,0 +1,33 @@
+<RelativeLayout android:id="@+id/lin_car"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/dimen_2"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_20"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:src="@drawable/car_towing" />
+
+        <TextView
+            android:id="@+id/tv_cat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Car Towing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12" />
+
+    </LinearLayout>
+</RelativeLayout>

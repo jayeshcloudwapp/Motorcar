@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_5"
+        app:cardElevation="@dimen/dimen_5"
+        app:cardMaxElevation="@dimen/dimen_5"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15">
+
+            <View
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/iv_img"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_bold"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:background="@color/background"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

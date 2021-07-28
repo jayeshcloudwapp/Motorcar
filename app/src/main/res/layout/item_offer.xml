@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:layout_marginBottom="@dimen/dimen_5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_offer_background"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_offer_background"
+            android:padding="@dimen/dimen_20">
+
+            <ImageView
+                android:id="@+id/iv_battery"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:src="@drawable/battery_replacement" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toLeftOf="@+id/lin_offer"
+                android:layout_toRightOf="@+id/iv_battery"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_bold"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Battery Replacement"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Merchant Name:Amra"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Location:Dubai United Arab Emirates"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Actual Price:250 AED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Discount Price:250 AED"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nexa_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_5"
+                    android:text="30%"
+                    android:textColor="@color/yellow_200"
+                    android:textSize="@dimen/text_18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="DISCOUNT"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:fontFamily="@font/nexa_light"
+            android:text="Valid until 23 Jun 2021"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_avail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/btn_back"
+                android:enabled="true"
+                app:fontFamily="@font/nexa_bold"
+                android:paddingStart="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_20"
+                android:paddingBottom="@dimen/dimen_10"
+                android:shadowRadius="10"
+                android:text="Avail Offer"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@drawable/btn_back"
+                android:enabled="true"
+                android:gravity="center"
+                android:fontFamily="@font/nexa_bold"
+                android:paddingStart="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingEnd="@dimen/dimen_20"
+                android:paddingBottom="@dimen/dimen_10"
+                android:shadowRadius="10"
+                android:text="Details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

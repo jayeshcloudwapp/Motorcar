@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimen_10"
+    app:cardElevation="@dimen/dimen_10"
+    app:cardBackgroundColor="@color/white"
+    app:cardMaxElevation="@dimen/dimen_5"
+    app:cardPreventCornerOverlap="false"
+    android:layout_margin="@dimen/dimen_10"
+    app:cardUseCompatPadding="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@color/yellow_200"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/iv_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_bold"
+                    android:padding="@dimen/dimen_2"
+                    android:text="Cat Tire"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_2"
+                    android:text="C1 customer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_2"
+                    android:text="c1@email.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_2"
+                    android:text="+971-58-58842"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_2"
+                    android:text="Submitted Date:2020-11-10 11:15:09"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_2"
+                    android:text="Address : Yakitate -Dubai - United Arab Emirates"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dimen_10"
+            android:src="@drawable/ic_close_circle" />
+
+
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

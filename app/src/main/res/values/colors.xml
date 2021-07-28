@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_200">#FFD300</color>
+    <color name="yellow_500">#D6B614</color>
+    <color name="yellow_700">#9E8407</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="text">#8C9DA7</color>
+    <color name="text2">#999999</color>
+    <color name="grey">#EFEFEF</color>
+    <color name="greybg">#F2F3F5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#EBEBEB</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#01C43C</color>
+    <color name="red">#FF0000</color>
+    <color name="milkycolor">#F2F7FA</color>
+    
+    <array name="array_dot_active">
+        <item>@color/yellow_500</item>
+        <item>@color/yellow_500</item>
+        <item>@color/yellow_500</item>
+        <item>@color/yellow_500</item>
+    </array>
+
+    <!--    <array name="array_dot_active">-->
+    <!--        <item>@color/dot_light_screen1</item>-->
+    <!--        <item>@color/dot_light_screen2</item>-->
+    <!--        <item>@color/dot_light_screen3</item>-->
+    <!--        <item>@color/dot_light_screen4</item>-->
+    <!--    </array>-->
+
+    <array name="array_dot_inactive">
+        <item>@color/yellow_200</item>
+        <item>@color/yellow_200</item>
+        <item>@color/yellow_200</item>
+        <item>@color/yellow_200</item>
+    </array>
+
+</resources>

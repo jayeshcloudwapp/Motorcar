@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop.ui.product.ProductDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <RelativeLayout
+            android:id="@+id/upperlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_200"
+            android:layout_weight="1">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator"
+                android:background="@color/white"
+                android:overScrollMode="always" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                app:tabBackground="@drawable/d_indicator_background"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_to_cart"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:fontFamily="@font/nexa_bold"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingBottom="@dimen/dimen_15"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_12"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline31" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_to_cart"
+        app:layout_constraintEnd_toStartOf="@+id/guideline32"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline31"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_bold"
+                android:padding="@dimen/dimen_5"
+                android:text="Shell Hellix 5W-40 Passenger Car"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_bold"
+                android:padding="@dimen/dimen_5"
+                android:text="Motor Oil 4 L"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Price : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Category : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Part No. : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Brand : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Model : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Year : "
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="400 AED"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Lubrication &amp; Hydraulics"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="GMUN4TLB003"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Shell Helix Ultra"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Ultra Plus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:padding="@dimen/dimen_5"
+                        android:text="2018"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Description"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas imperdiet sapien, nec volutpat dolor rutrum ut. Cras sagittis mi lorem, quis sagittis mauris varius a."
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

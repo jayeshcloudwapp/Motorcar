@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_230"
+    app:cardBackgroundColor="@color/yellow_200"
+    app:cardCornerRadius="@dimen/dimen_2"
+    app:cardElevation="@dimen/dimen_10"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:padding="@dimen/text_20"
+            android:textAlignment="center"
+            android:fontFamily="@font/nexa_bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_15" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="@dimen/dimen_120"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/dimen_20"
+            app:srcCompat="@drawable/logo" />
+    </com.google.android.material.card.MaterialCardView>
+
+

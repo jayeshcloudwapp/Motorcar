@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mcv_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dimen_5"
+    app:cardElevation="@dimen/dimen_5"
+    app:cardMaxElevation="@dimen/dimen_5"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/include4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:src="@drawable/car" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_toRightOf="@+id/iv_img"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_category_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/nexa_bold"
+                        android:drawableLeft="@drawable/ic_close"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_3"
+                        android:text="Car Wash"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/nexa_bold"
+                        android:padding="@dimen/dimen_5"
+                        android:text="Price:600AED"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_12" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_user_grey"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_3"
+                    android:text="Amara"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_3"
+                    android:text="Attributes : N/A"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_3"
+                    android:text="21 Jun,2021 12:05 PM"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/nexa_light"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dimen_3"
+                        android:text="Quatation ID:2354879"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_12" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_forward"
+                        app:tint="#b7b7b7" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

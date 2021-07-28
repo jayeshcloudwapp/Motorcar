@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver.ui.activity.auth.OtpActivity">
+
+    <include
+        android:id="@+id/include10"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="@dimen/dimen_120"
+        android:layout_margin="@dimen/dimen_30"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/include10"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexa_light"
+                android:text="Confirm Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="Enter the 6 Digit code sent to "
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="+9876543210"
+                    android:textColor="@color/text2"
+                    android:textSize="@dimen/text_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            app:cursorVisible="false"
+            app:forceKeyboard="false"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"
+            app:pinBackground="@drawable/otp_box"
+            app:pinHeight="40dp"
+            app:pinLength="6"
+            app:pinWidth="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dimen_10"
+                app:cardElevation="@dimen/dimen_3"
+                app:cardMaxElevation="@dimen/dimen_3"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="@dimen/dimen_2"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@font/nexa_bold"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_otp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:enabled="true"
+            android:fontFamily="@font/nexa_bold"
+            android:paddingLeft="@dimen/dimen_30"
+            android:paddingTop="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_30"
+            android:paddingBottom="@dimen/dimen_15"
+            android:text="Check OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Didn`t get the code?"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:fontFamily="@font/nexa_light"
+                android:text="Resend 00:00:07"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/tv_resend_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:fontFamily="@font/nexa_light"
+                android:text="Resend"
+                android:textColor="@color/yellow_200"
+                android:textSize="@dimen/text_15"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="addcarviewmodel"
+            type="com.cw.motorcar.driver.ui.activity.car.AddCarViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".driver.ui.activity.car.AddCarActivity">
+
+            <include
+                android:id="@+id/include5"
+                layout="@layout/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <TextView
+                android:id="@+id/tv_select_car"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:fontFamily="@font/nexa_light"
+                android:hint="@string/select_car_brand"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/include5" />
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Select Car Model"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_select_car" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Car Reg. Number"
+                android:inputType="text"
+                android:padding="@dimen/dimen_18"
+                android:text="@={addcarviewmodel.reg_no}"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_model" />
+
+            <TextView
+                android:id="@+id/tv_fual_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Select Fuel Type"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+            <TextView
+                android:id="@+id/tv_car_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Select Car Year"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fual_type" />
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Vin Number"
+                android:inputType="text"
+                android:padding="@dimen/dimen_18"
+                android:text="@={addcarviewmodel.vin_no}"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_car_year" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="@dimen/dimen_140"
+                android:layout_height="@dimen/dimen_160"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:padding="@dimen/dimen_10"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/et_subject">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/add_car_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_upload" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:hint="Upload Image \n (Optional)"
+                        android:padding="@dimen/dimen_10"
+                        android:textAlignment="center"
+                        android:textColor="@color/text2"
+                        android:textSize="@dimen/text_15" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:enabled="true"
+                android:fontFamily="@font/nexa_bold"
+                android:onClick="@{addcarviewmodel::onSaveClickButton}"
+                android:paddingLeft="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_15"
+                android:text="@string/save_my_car"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

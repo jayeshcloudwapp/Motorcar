@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop.ui.address.AddAddressActivity">
+
+    <include
+        android:id="@+id/include30"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline30"
+        app:layout_constraintStart_toStartOf="@+id/guideline29"
+        app:layout_constraintTop_toBottomOf="@+id/include30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border_rectangle"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Full Name (required)"
+                android:inputType="text"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:fontFamily="@font/nexa_light"
+                android:hint="House No. Bulding Name (required)"
+                android:inputType="text"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_12" />
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_rectangle"
+                android:fontFamily="@font/nexa_light"
+                android:hint="Road name,Area,Colony (required)"
+                android:inputType="text"
+                android:padding="@dimen/dimen_18"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="Type of Address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_12" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/selected_address"
+                        android:drawableLeft="@drawable/ic_home_white"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:drawableTint="@color/black"
+                        android:paddingStart="@dimen/dimen_30"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:text="Home"
+                        android:fontFamily="@font/nexa_light"
+                        android:textSize="@dimen/text_12"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/selected_address"
+                        android:drawableTint="@color/black"
+                        android:text="Work"
+                        android:fontFamily="@font/nexa_light"
+                        android:textSize="@dimen/text_12"
+                        android:paddingStart="@dimen/dimen_30"
+                        android:paddingRight="@dimen/dimen_30"
+                        android:drawableLeft="@drawable/ic_home_white"
+                        android:drawablePadding="@dimen/dimen_10"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_70"
+                android:layout_marginBottom="20dp"
+                android:enabled="true"
+                android:fontFamily="@font/nexa_bold"
+                android:paddingLeft="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_15"
+                android:text="Save Address"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
